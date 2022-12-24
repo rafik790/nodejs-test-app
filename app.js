@@ -1,6 +1,6 @@
 const express =require('express');
 const app= express();
-const port =  4000;
+const port =  80;
 app.use(express.json());
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to Test Demo Project.." });
