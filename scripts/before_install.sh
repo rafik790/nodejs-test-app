@@ -8,7 +8,7 @@
 
 
 #create our working directory if ot doesnt exist
-DIR="/home/ubuntu/nodeapps/signal-server"
+DIR="/var/www/html"
 if [ -d "$DIR" ]; then
     echo "${DIR} exists"
 else 
