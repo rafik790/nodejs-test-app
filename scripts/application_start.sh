@@ -1,7 +1,7 @@
 !/bin/bash
-sudo chmod -R 777 /var/www/html
+sudo chmod -R 777 /home/ubuntu/nodeapps/signal-server
 #navifate into our worling directory where we have all our github files
-cd /var/www/html
+cd /home/ubuntu/nodeapps/signal-server
 
 #add npm and node to path
 export NVM_DIR="$HOME/.nvm"
