@@ -1,7 +1,7 @@
 !/bin/bash
-sudo chmod -R 777 /home/ubuntu/nodejs-express
+sudo chmod -R 777 /var/www/html/signal-server
 #navifate into our worling directory where we have all our github files
-cd /home/ubuntu/nodejs-express
+cd /var/www/html/signal-server
 
 #add npm and node to path
 export NVM_DIR="$HOME/.nvm"
@@ -10,6 +10,6 @@ export NVM_DIR="$HOME/.nvm"
 
 #install node modules
 npm install 
-pm2 start npm --name "myApp" 
+pm2 start npm --name "singalserver" 
 #start our node app in the background
 node app.js > app.out.log 2> app.err.log < /dev/null &
